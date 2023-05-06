@@ -1,8 +1,15 @@
 mod front_of_house {
+
+    fn get_front_name() {}
+
     pub mod hosting {
         pub fn add_to_waitlist() {}
 
         fn seat_at_table() {}
+
+        fn get_name() {
+            super::get_front_name()
+        }
     }
 
     mod serving {
